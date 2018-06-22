@@ -28,7 +28,7 @@ entity Notes {
 }
 
 enum Difficulty {
-	EASY, MODERATE, HARD
+	EASY, MODERATE, KIND_OF_HARD, HARD
 }
 
 relationship OneToOne {
@@ -49,4 +49,8 @@ relationship OneToOne {
 
 relationship ManyToMany {
 	Recipe{recipe(Category)} to Category
+}
+
+relationship ManyToMany {
+	Category to Recipe
 }
