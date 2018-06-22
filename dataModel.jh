@@ -20,7 +20,7 @@ entity Ingredient {
 }
 
 entity UnitOfMeasure {
-	uom String
+	description String
 }
 
 entity Notes {
@@ -44,7 +44,7 @@ relationship ManyToOne {
 }
 
 relationship OneToOne {
-	Ingredient{unitOfMeasure} to UnitOfMeasure
+	Ingredient{uom} to UnitOfMeasure
 }
 
 relationship ManyToMany {
