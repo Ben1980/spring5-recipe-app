@@ -11,10 +11,6 @@ buildscript {
     }
 }
 
-plugins {
-    id 'io.franzbecker.gradle-lombok' version '1.14'
-}
-
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
@@ -29,11 +25,6 @@ sourceCompatibility = 1.8
 repositories {
     mavenCentral()
     jcenter()
-}
-
-lombok {
-    version = "1.18.0"
-    sha256 = ""
 }
 
 dependencies {
